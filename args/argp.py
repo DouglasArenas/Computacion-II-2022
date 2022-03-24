@@ -16,5 +16,6 @@ if os.path.isfile(args.source_file):
     file2 = open(args.destiny_file, 'a+')
     file2.write(cont)
     file2.close()
+    print("Contenido copiado")
 else:
     print("El archivo origen no existe")
