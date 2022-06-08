@@ -1,5 +1,6 @@
 import threading, sys, os, codecs
 
+
 def read_sys(w):
     print('Ingrese texto a cifrar: ')
     line = sys.stdin.readline()
