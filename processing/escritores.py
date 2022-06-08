@@ -12,7 +12,8 @@ def child(l):
     if os.fork() == 0:
         if args.v:
                 print(f"Proceso {os.getpid()} escribiendo letra '{l}'")
-        file.write(l)
+        for n in range(args.r):
+            file.write(l)
         file.flush()
         time.sleep(1)
         os._exit(0)
